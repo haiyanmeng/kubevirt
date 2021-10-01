@@ -4,6 +4,8 @@ kind: VirtualMachine
 metadata:
   name: testvm
   namespace: vm
+  annotations:
+    configmanagement.gke.io/managed: disabled
 spec:
   running: false
   template:
